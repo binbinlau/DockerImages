@@ -6,7 +6,7 @@ latest
 
 
 ## What's in this image?
-This image contains the version 8.1.2 of node.js
+This image contains the version 8.2.1 of node.js
 
 
 ## Supported Docker Versions
