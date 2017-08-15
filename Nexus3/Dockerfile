@@ -1,6 +1,6 @@
 FROM binsix/openjdk:latest
 MAINTAINER LiuBin
-LABEL name="nexus3" license="MIT" build-date="201700813"
+LABEL name="nexus3" license="MIT" build-date="20170813"
 
 ENV SONATYPE_DIR=/data/softs
 ENV NEXUS_HOME=${SONATYPE_DIR}/nexus
