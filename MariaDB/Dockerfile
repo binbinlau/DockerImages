@@ -1,6 +1,6 @@
 FROM binsix/centos7
 MAINTAINER LiuBin
-LABEL name="mariadb" license="MIT" build-date="20170812"
+LABEL name="mariadb" license="MIT" build-date="20180126"
 
 
 ENV MARIADB_VERSION 10.1.26
