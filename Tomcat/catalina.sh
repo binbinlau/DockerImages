@@ -1,6 +1,6 @@
 #!/bin/sh
 
-JAVA_OPTS="$JAVA_OPTS -server -Xms256m -Djava.security.egd=file:/dev/./urandom"
+JAVA_OPTS="$JAVA_OPTS -server -Xms512m -Djava.security.egd=file:/dev/./urandom"
 UMASK="0022"
 # Licensed to the Apache Software Foundation (ASF) under one or more
 # contributor license agreements.  See the NOTICE file distributed with

@@ -52,9 +52,10 @@
    -->
   <Service name="Catalina">
 
-    <!--The connectors can use a shared executor, you can define one or more named thread pools-->
+    <!--The connectors can use a shared executor, you can define one or more named thread pools, https://tomcat.apache.org/tomcat-8.5-doc/config/executor.html-->
     <Executor name="tomcatThreadPool" namePrefix="catalina-exec-"
-        maxThreads="300" minSpareThreads="4"/>
+        maxThreads="600" minSpareThreads="50"
+		prestartminSpareThreads="true" />
 
 
     <!-- A "Connector" represents an endpoint by which requests are received
@@ -69,15 +70,15 @@
                connectionTimeout="20000"
                redirectPort="8443" />
      -->
-    <!-- A "Connector" using the shared thread pool-->
+    <!-- A "Connector" using the shared thread pool, https://tomcat.apache.org/tomcat-8.5-doc/config/http.html#Common_Attributes-->
     
     <Connector executor="tomcatThreadPool"
                port="8080" protocol="org.apache.coyote.http11.Http11Nio2Protocol"
                connectionTimeout="20000"
                redirectPort="8443"
-               URIEncoding="UTF-8" minSpareThreads="25"
+               URIEncoding="UTF-8"
                disableUploadTimeout="true" acceptorThreadCount="2"
-               acceptCount="300" maxThreads="600" />
+               acceptCount="1000" />
     
     <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443
          This connector uses the NIO implementation. The default
