@@ -1,8 +1,8 @@
 FROM binsix/openjdk:latest
 MAINTAINER LiuBin
-LABEL name="tomcat" license="MIT" build-date="20170812"
+LABEL name="tomcat" license="MIT" build-date="20180629"
 
-ENV VERSION 8.5.20
+ENV VERSION 8.5.32
 ENV TOMCAT_PATH /data/env/tomcats/0
 
 RUN yum update -y && cd /data/softs && wget http://www-us.apache.org/dist/tomcat/tomcat-8/v$VERSION/bin/apache-tomcat-$VERSION.tar.gz && tar -zxf apache-tomcat-$VERSION.tar.gz && mkdir /data/env/tomcats && mv apache-tomcat-$VERSION $TOMCAT_PATH && rm -rf /data/softs/*
