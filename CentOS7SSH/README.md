@@ -1,10 +1,15 @@
 # SSHCentOS7
 docker images of centos7 with SSH server.
 you can use it like this:
+
 step 1 : creat a contains
-docker run -d -p 1122:22 --name centosssh centos7ssh:latest
+
+docker run -d -p 1122:22 --name sshcentos7 binsix/sshcentos7:latest
+
 step 2 : use ssh command to link it 
+
 ssh root@localhost -p 1122
+
 passwd:root
 
 ## Supported Tags

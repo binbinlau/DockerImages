@@ -1,6 +1,6 @@
-FROM centos:centos7
+FROM binsix/centos7
 MAINTAINER binsix
-LABEL name="centos7ssh" license="MIT" build-date="20180414"
+LABEL name="sshcentos7" license="MIT" build-date="20180806"
 
 RUN echo 'root:root' | chpasswd
 RUN yum install -y openssh-server && yum clean all
