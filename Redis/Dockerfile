@@ -1,8 +1,8 @@
 FROM binsix/centos7
 MAINTAINER LiuBin
-LABEL name="redis" license="mit" build-date="20170812"
+LABEL name="redis" license="mit" build-date="20190625"
 
-ENV redis_VERSION 4.0.1
+ENV redis_VERSION 5.0.5
 
 RUN yum clean all && yum update -y
 COPY startup.sh /data/env/redis/startup

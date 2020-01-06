@@ -5,7 +5,7 @@ docker images of redis base on centos7
 latest
 
 ## What's in this image?
-This image contains the version 4.0.1 of redis
+This image contains the version 5.0.5 of redis
 
 ## Usage
 docker run -d --privileged -p 6379:6379 -v /data/redis/db:/data/env/redis/db --name redis binsix/redis
